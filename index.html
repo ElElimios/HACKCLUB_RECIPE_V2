@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackACook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cat-rain"></div>
+    <div class="page">
+        <header class="banner">
+            <div class="banner-content">
+                <h1>Get a random recipe!</h1>
+                <p>Pick a category and let's start cooking!</p>
+            </div>
+        </header>
+        <main>
+            <div class="controls">
+                <select id="categorySelect">
+                    <option value="">All Categories</option>
+                    <option value="Beef">Beef</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Seafood">Seafood</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Breakfast">Breakfast</option>
+                </select>
+                <button id="getRecipeBtn">Get Recipe</button>
+            </div>
+
+            <div class="card">
+                <div id="recipe-image-container" class="recipe-image-container" style="display: none;">
+                    <img id="recipe-img" src="" alt="Recipe Image">
+                </div>
+                <div class="recipe-info">
+                    <h2 id="recipe-name">Ready to hackacook?</h2>
+                    <p id="recipe-description">Choose a category and click the button!</p>
+                    <ul id="recipe-ingredients"></ul>
+                    <hr id="divider" style="display: none; border: 0.5px solid #eee; margin: 1.5rem 0;">
+                    <p id="recipe-instructions"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Quick ideas for you to cook!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
